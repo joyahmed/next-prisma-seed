@@ -1,20 +1,27 @@
 {
-  "name": "next-prisma-seed",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
-  },
-  "devDependencies": {
-    "eslint": "8.16.0",
-    "eslint-config-next": "12.1.6"
+	"name": "next-prisma-seed",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@prisma/client": "^3.14.0",
+		"D": "^1.0.0",
+		"next": "12.1.6",
+		"react": "18.1.0",
+		"react-dom": "18.1.0"
+	},
+	"devDependencies": {
+		"eslint": "8.16.0",
+		"eslint-config-next": "12.1.6",
+		"prisma": "^3.14.0"
+	},
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
+
 }
